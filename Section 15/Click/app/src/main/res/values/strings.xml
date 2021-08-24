@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Click</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_text">Click</string>
+    <string name="touch_description">An icon showing a finger toucing the screen.</string>
+    <string name="instructions_text">Hit the button as many times as you can before the timer runs out!  If you miss the button, be prepared to lose points!</string>
+    <string name="play_button_text">Play</string>
+    <string name="click_button_text">Click Here!</string>
+    <string name="placeholder_time">00:00</string>
+    <string name="placeholder_score">0</string>
+    <string name="label_text">Final Score</string>
+    <string name="button_gamble_text">Gamble Your Points!</string>
+    <string name="play_again_text">Play Again</string>
+    <string name="title_button_text">Return to Title</string>
+</resources>

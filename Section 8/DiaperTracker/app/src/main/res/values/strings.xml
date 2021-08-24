@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Diaper Tracker</string>
+    <string name="diaper_description">A diaper being changed</string>
+    <string name="rb_dirty_text">Dirty</string>
+    <string name="rb_wet_text">Wet</string>
+    <string name="rb_dry_text">Dry</string>
+    <string name="time_hint_text">Enter Time</string>
+    <string name="button_add_text">Add Diaper</string>
+    <string name="button_clear_text">Clear All</string>
+    <string name="header_text">-- Diaper Tracker --</string>
+    <string name="baby_description">A simple baby</string>
+    <string name="placeholder_diaper_changes"></string>
+    <string name="placeholder_diaper_count_text"></string>
+</resources>

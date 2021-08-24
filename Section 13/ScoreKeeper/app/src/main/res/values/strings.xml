@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Score Keeper</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="basketball_description">A basketball vector</string>
+    <string name="edit_text_name_hint">Enter Team Name</string>
+    <string name="button_start_text">Start Game</string>
+    <string name="placeholder_final_score">Team Final Score</string>
+    <string name="button_new_game_text">New Game</string>
+    <string name="placehodler_team_name">Team Name</string>
+    <string name="placeholder_score">0</string>
+    <string name="q1">Q1</string>
+    <string name="q2">Q2</string>
+    <string name="q3">Q3</string>
+    <string name="q4">Q4</string>
+    <string name="percentage_header">Shooting Percentages</string>
+    <string name="placeholder_percentage">0 %</string>
+    <string name="button_ft">Free Throw</string>
+    <string name="button_2pt">2pt</string>
+    <string name="button_3pt">3pt</string>
+    <string name="buttom_miss">Missed Shot</string>
+    <string name="button_end_text">End Game</string>
+</resources>

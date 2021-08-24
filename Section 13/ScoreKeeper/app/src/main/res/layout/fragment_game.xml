@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="25dp"
+    android:background="@color/court"
+    android:fillViewport="true"
+    android:padding="10dp"
+    tools:context=".GameFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/game_fragment_tv_team1_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/squada_one"
+            android:text="@string/placehodler_team_name"
+            android:textColor="@color/team1"
+            android:textSize="36sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/game_fragment_bt_team1_ft"
+            app:layout_constraintStart_toStartOf="@+id/game_fragment_bt_team1_ft"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/game_fragment_tv_team2_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/squada_one"
+            android:text="@string/placehodler_team_name"
+            android:textColor="@color/team2"
+            android:textSize="36sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/game_fragment_bt_team2_ft"
+            app:layout_constraintStart_toStartOf="@+id/game_fragment_bt_team2_ft"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/game_fragment_tv_team1_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/squada_one"
+            android:text="@string/placeholder_score"
+            android:textColor="@color/black"
+            android:textSize="72sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/game_fragment_bt_team1_ft"
+            app:layout_constraintStart_toStartOf="@+id/game_fragment_bt_team1_ft"
+            app:layout_constraintTop_toBottomOf="@+id/game_fragment_tv_team1_name"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/game_fragment_tv_team2_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/squada_one"
+            android:text="@string/placeholder_score"
+            android:textColor="@color/black"
+            android:textSize="72sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/game_fragment_bt_team2_ft"
+            app:layout_constraintStart_toStartOf="@+id/game_fragment_bt_team2_ft"
+            app:layout_constraintTop_toBottomOf="@+id/game_fragment_tv_team2_name"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:checkedButton="@id/game_fragment_rb_q1"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/game_fragment_tv_team1_score"
+            app:layout_constraintVertical_bias="0.050000012">
+
+            <RadioButton
+                android:id="@+id/game_fragment_rb_q1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/squada_one"
+                android:text="@string/q1"
+                android:textSize="24sp" />
+
+            <RadioButton
+                android:id="@+id/game_fragment_rb_q2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/squada_one"
+                android:text="@string/q2"
+                android:textSize="24sp" />
+
+            <RadioButton
+                android:id="@+id/game_fragment_rb_q3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/squada_one"
+                android:text="@string/q3"
+                android:textSize="24sp" />
+
+            <RadioButton
+                android:id="@+id/game_fragment_rb_q4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/squada_one"
+                android:text="@string/q4"
+                android:textSize="24sp" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/game_fragment_tv_team1_q1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:fontFamily="@font/squada_one"
+            android:paddingTop="10dp"
+            android:text="@string/placeholder_score"
+            android:textAlignment="center"
+            android:textColor="@color/team1"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/game_fragment_tv_team1_q2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/game_fragment_tv_team1_q2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:fontFamily="@font/squada_one"
+            android:paddingTop="10dp"
+            android:text="@string/placeholder_score"
+            android:textAlignment="center"
+            android:textColor="@color/team1"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@+id/game_fragment_tv_team1_q1"
+            app:layout_constraintEnd_toStartOf="@+id/game_fragment_tv_team1_q3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/game_fragment_tv_team1_q1"
+            app:layout_constraintTop_toTopOf="@+id/game_fragment_tv_team1_q1" />
+
+        <TextView
+            android:id="@+id/game_fragment_tv_team1_q3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:fontFamily="@font/squada_one"
+            android:paddingTop="10dp"
+            android:text="@string/placeholder_score"
+            android:textAlignment="center"
+            android:textColor="@color/team1"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@+id/game_fragment_tv_team1_q2"
+            app:layout_constraintEnd_toStartOf="@+id/game_fragment_tv_team1_q4"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/game_fragment_tv_team1_q2"
+            app:layout_constraintTop_toTopOf="@+id/game_fragment_tv_team1_q2" />
+
+        <TextView
+            android:id="@+id/game_fragment_tv_team1_q4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:fontFamily="@font/squada_one"
+            android:paddingTop="10dp"
+            android:text="@string/placeholder_score"
+            android:textAlignment="center"
+            android:textColor="@color/team1"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@+id/game_fragment_tv_team1_q3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/game_fragment_tv_team1_q3"
+            app:layout_constraintTop_toTopOf="@+id/game_fragment_tv_team1_q3" />
+
+        <TextView
+            android:id="@+id/game_fragment_tv_team2_q1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:fontFamily="@font/squada_one"
+            android:paddingTop="10dp"
+            android:text="@string/placeholder_score"
+            android:textAlignment="center"
+            android:textColor="@color/team2"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/game_fragment_tv_team2_q2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/game_fragment_tv_team1_q2"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/game_fragment_tv_team2_q2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:fontFamily="@font/squada_one"
+            android:paddingTop="10dp"
+            android:text="@string/placeholder_score"
+            android:textAlignment="center"
+            android:textColor="@color/team2"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@+id/game_fragment_tv_team2_q1"
+            app:layout_constraintEnd_toStartOf="@+id/game_fragment_tv_team2_q3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/game_fragment_tv_team2_q1"
+            app:layout_constraintTop_toTopOf="@+id/game_fragment_tv_team2_q1" />
+
+        <TextView
+            android:id="@+id/game_fragment_tv_team2_q3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:fontFamily="@font/squada_one"
+            android:paddingTop="10dp"
+            android:text="@string/placeholder_score"
+            android:textAlignment="center"
+            android:textColor="@color/team2"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@+id/game_fragment_tv_team2_q2"
+            app:layout_constraintEnd_toStartOf="@+id/game_fragment_tv_team2_q4"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/game_fragment_tv_team2_q2"
+            app:layout_constraintTop_toTopOf="@+id/game_fragment_tv_team2_q2" />
+
+        <TextView
+            android:id="@+id/game_fragment_tv_team2_q4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:fontFamily="@font/squada_one"
+            android:paddingTop="10dp"
+            android:text="@string/placeholder_score"
+            android:textAlignment="center"
+            android:textColor="@color/team2"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@+id/game_fragment_tv_team2_q3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/game_fragment_tv_team2_q3"
+            app:layout_constraintTop_toTopOf="@+id/game_fragment_tv_team2_q3" />
+
+        <TextView
+            android:id="@+id/game_fragment_tv_percentage_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/squada_one"
+            android:text="@string/percentage_header"
+            android:textColor="@color/ewing"
+            android:textSize="36sp"
+            app:layout_constraintBottom_toTopOf="@+id/game_fragment_tv_team1_percentage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/game_fragment_tv_team2_q1" />
+
+        <TextView
+            android:id="@+id/game_fragment_tv_team1_percentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/squada_one"
+            android:text="@string/placeholder_percentage"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toTopOf="@+id/game_fragment_bt_team1_ft"
+            app:layout_constraintEnd_toEndOf="@+id/game_fragment_bt_team1_ft"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/game_fragment_bt_team1_ft"
+            app:layout_constraintTop_toBottomOf="@+id/game_fragment_tv_percentage_header" />
+
+        <TextView
+            android:id="@+id/game_fragment_tv_team2_percentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/squada_one"
+            android:text="@string/placeholder_percentage"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="@+id/game_fragment_tv_team1_percentage"
+            app:layout_constraintEnd_toEndOf="@+id/game_fragment_bt_team2_ft"
+            app:layout_constraintStart_toStartOf="@+id/game_fragment_bt_team2_ft"
+            app:layout_constraintTop_toTopOf="@+id/game_fragment_tv_team1_percentage" />
+
+        <Button
+            android:id="@+id/game_fragment_bt_team1_ft"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="@color/team1"
+            android:fontFamily="@font/squada_one"
+            android:text="@string/button_ft"
+            android:textSize="18sp"
+            app:cornerRadius="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/game_fragment_bt_team1_2pt"
+            app:layout_constraintEnd_toStartOf="@+id/game_fragment_bt_team2_ft"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/game_fragment_tv_team1_percentage" />
+
+        <Button
+            android:id="@+id/game_fragment_bt_team1_2pt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="@color/team1"
+            android:fontFamily="@font/squada_one"
+            android:text="@string/button_2pt"
+            android:textSize="18sp"
+            app:cornerRadius="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/game_fragment_bt_team1_3pt"
+            app:layout_constraintEnd_toStartOf="@+id/game_fragment_bt_team2_2pt"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/game_fragment_bt_team1_ft" />
+
+        <Button
+            android:id="@+id/game_fragment_bt_team1_3pt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="@color/team1"
+            android:fontFamily="@font/squada_one"
+            android:text="@string/button_3pt"
+            android:textSize="18sp"
+            app:cornerRadius="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/game_fragment_bt_team1_miss"
+            app:layout_constraintEnd_toStartOf="@+id/game_fragment_bt_team2_3pt"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/game_fragment_bt_team1_2pt" />
+
+        <Button
+            android:id="@+id/game_fragment_bt_team1_miss"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="@color/team1"
+            android:fontFamily="@font/squada_one"
+            android:text="@string/buttom_miss"
+            android:textSize="18sp"
+            app:cornerRadius="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/game_fragment_bt_end"
+            app:layout_constraintEnd_toStartOf="@+id/game_fragment_bt_team2_miss"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/game_fragment_bt_team1_3pt" />
+
+        <Button
+            android:id="@+id/game_fragment_bt_team2_ft"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="@color/team2"
+            android:fontFamily="@font/squada_one"
+            android:text="@string/button_ft"
+            android:textSize="18sp"
+            app:cornerRadius="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/game_fragment_bt_team1_ft"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/game_fragment_bt_team1_ft"
+            app:layout_constraintTop_toTopOf="@+id/game_fragment_bt_team1_ft" />
+
+        <Button
+            android:id="@+id/game_fragment_bt_team2_2pt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="@color/team2"
+            android:fontFamily="@font/squada_one"
+            android:text="@string/button_2pt"
+            android:textSize="18sp"
+            app:cornerRadius="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/game_fragment_bt_team1_2pt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/game_fragment_bt_team1_2pt"
+            app:layout_constraintTop_toTopOf="@+id/game_fragment_bt_team1_2pt" />
+
+        <Button
+            android:id="@+id/game_fragment_bt_team2_3pt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="@color/team2"
+            android:fontFamily="@font/squada_one"
+            android:text="@string/button_3pt"
+            android:textSize="18sp"
+            app:cornerRadius="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/game_fragment_bt_team1_3pt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/game_fragment_bt_team1_3pt"
+            app:layout_constraintTop_toTopOf="@+id/game_fragment_bt_team1_3pt" />
+
+        <Button
+            android:id="@+id/game_fragment_bt_team2_miss"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="@color/team2"
+            android:fontFamily="@font/squada_one"
+            android:text="@string/buttom_miss"
+            android:textSize="18sp"
+            app:cornerRadius="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/game_fragment_bt_team1_miss"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/game_fragment_bt_team1_miss"
+            app:layout_constraintTop_toTopOf="@+id/game_fragment_bt_team1_miss" />
+
+        <Button
+            android:id="@+id/game_fragment_bt_end"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="@color/ewing"
+            android:text="@string/button_end_text"
+            android:textSize="18sp"
+            app:cornerRadius="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/game_fragment_bt_team1_miss" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

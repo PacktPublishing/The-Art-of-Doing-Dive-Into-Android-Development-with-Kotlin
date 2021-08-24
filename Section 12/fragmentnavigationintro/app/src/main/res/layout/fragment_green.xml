@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/holo_green_light"
+        android:orientation="vertical"
+        tools:context=".GreenFragment" >
+
+        <TextView
+            android:id="@+id/green_fragment_tv_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:text="@string/green_header_text"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_green_light"
+            android:textSize="72sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/green_fragment_et_current_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/edit_text_hint"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:autofillHints="" />
+
+        <Button
+            android:id="@+id/green_fragment_bt_next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/holo_green_dark"
+            android:text="@string/button_text" />
+
+        <TextView
+            android:id="@+id/green_fragment_tv_passed_messages"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+</layout>

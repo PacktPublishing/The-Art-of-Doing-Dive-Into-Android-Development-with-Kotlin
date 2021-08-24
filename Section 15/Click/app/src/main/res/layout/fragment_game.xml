@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/game_fragment_lo_game"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        tools:context=".GameFragment">
+
+        <Button
+            android:id="@+id/game_fragment_bt_1"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:backgroundTint="@color/purple_700"
+            android:fontFamily="monospace"
+            android:text="@string/click_button_text"
+            android:textSize="30sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/game_fragment_bt_2"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:backgroundTint="@color/purple_500"
+            android:fontFamily="monospace"
+            android:text="@string/click_button_text"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/game_fragment_bt_3"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:backgroundTint="@color/teal_700"
+            android:fontFamily="monospace"
+            android:text="@string/click_button_text"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/game_fragment_bt_4"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:backgroundTint="@color/teal_200"
+            android:fontFamily="monospace"
+            android:text="@string/click_button_text"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/game_fragment_tv_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:text="@string/placeholder_time"
+            android:textColor="@color/black"
+            android:textSize="36sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/game_fragment_tv_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:text="@string/placeholder_score"
+            android:textColor="@color/purple_700"
+            android:textSize="72sp"
+            app:layout_constraintBottom_toTopOf="@+id/game_fragment_tv_timer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

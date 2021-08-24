@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/navigation"
+    app:startDestination="@id/redFragment"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <fragment
+        android:id="@+id/redFragment"
+        android:name="com.example.fragmentnavigationintro.RedFragment"
+        android:label="RedFragment"
+        tools:layout="@layout/fragment_red">
+        <action
+            android:id="@+id/action_redFragment_to_greenFragment"
+            app:destination="@id/greenFragment" />
+        <argument
+            android:name="currentMessages"
+            app:argType="string"
+            android:defaultValue="Enter values above!" />
+        <argument
+            android:name="passedMessages"
+            app:argType="string"
+            android:defaultValue="Pass them to the next fragment!" />
+    </fragment>
+    <fragment
+        android:id="@+id/greenFragment"
+        android:name="com.example.fragmentnavigationintro.GreenFragment"
+        android:label="GreenFragment"
+        tools:layout="@layout/fragment_green">
+        <action
+            android:id="@+id/action_greenFragment_to_blueFragment"
+            app:destination="@id/blueFragment" />
+        <argument
+            android:name="currentMessage"
+            app:argType="string" />
+        <argument
+            android:name="passedMessages"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/blueFragment"
+        android:name="com.example.fragmentnavigationintro.BlueFragment"
+        android:label="BlueFragment"
+        tools:layout="@layout/fragment_blue">
+        <action
+            android:id="@+id/action_blueFragment_to_redFragment"
+            app:destination="@id/redFragment" />
+        <argument
+            android:name="currentMessage"
+            app:argType="string" />
+        <argument
+            android:name="passedMessages"
+            app:argType="string" />
+    </fragment>
+</navigation>

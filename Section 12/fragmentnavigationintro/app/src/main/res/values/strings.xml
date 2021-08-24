@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Fragment Navigation Intro</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="red_header_text">RED</string>
+    <string name="edit_text_hint">Say something to pass to the next fragment!</string>
+    <string name="button_text">Go to next fragment</string>
+    <string name="green_header_text">GREEN</string>
+    <string name="blue_header_text">BLUE</string>
+</resources>

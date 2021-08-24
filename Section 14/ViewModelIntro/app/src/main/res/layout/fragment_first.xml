@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="firstViewModel"
+            type="com.example.viewmodelintro.FirstViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".FirstFragment">
+
+        <TextView
+            android:id="@+id/first_fragment_tv_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="36sp"
+            android:text="@{firstViewModel.message}"/>
+
+        <EditText
+            android:id="@+id/first_fragment_et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/name_hint"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:autofillHints="" />
+
+        <Button
+            android:id="@+id/first_fragment_bt_hello"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hello_button_text" />
+
+        <Button
+            android:id="@+id/first_fragment_bt_goodbye"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/goodbye_button_text" />
+
+        <Button
+            android:id="@+id/first_fragment_bt_end"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/end_button_text" />
+
+        <TextView
+            android:id="@+id/first_fragment_tv_clicks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="@{firstViewModel.clicks.toString()}"/>
+    </LinearLayout>
+</layout>

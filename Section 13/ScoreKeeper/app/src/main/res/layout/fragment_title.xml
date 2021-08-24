@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="25dp"
+    android:background="@color/court"
+    android:gravity="center_horizontal|center_vertical"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".TitleFragment" >
+
+    <ImageView
+        android:id="@+id/title_fragment_iv_basketball_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/basketball_description"
+        android:src="@drawable/ic_basketball" />
+
+    <EditText
+        android:id="@+id/title_fragment_et_team1_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="@font/squada_one"
+        android:hint="@string/edit_text_name_hint"
+        android:inputType="textPersonName"
+        android:padding="20dp"
+        android:textAlignment="center"
+        android:textColor="@color/team1"
+        android:textColorHint="@color/team1"
+        android:textSize="36sp"
+        android:autofillHints="" />
+
+    <Button
+        android:id="@+id/title_fragment_bt_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/ewing"
+        android:fontFamily="@font/squada_one"
+        android:text="@string/button_start_text"
+        android:textSize="36sp"
+
+        app:cornerRadius="20dp" />
+
+    <EditText
+        android:id="@+id/title_fragment_et_team2_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:fontFamily="@font/squada_one"
+        android:hint="@string/edit_text_name_hint"
+        android:inputType="textPersonName"
+        android:padding="20dp"
+        android:textAlignment="center"
+        android:textColor="@color/team2"
+        android:textColorHint="@color/team2"
+        android:textSize="36sp" />
+
+    <ImageView
+        android:id="@+id/title_fragment_iv_basketball_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/basketball_description"
+        android:src="@drawable/ic_basketball" />
+</LinearLayout>

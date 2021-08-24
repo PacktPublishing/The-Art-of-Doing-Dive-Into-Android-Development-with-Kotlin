@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="android.view.View"/>
+        <variable
+            name="scoreViewModel"
+            type="com.example.click.ScoreViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="vertical"
+        android:padding="10dp"
+        tools:context=".ScoreFragment">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/touch_description"
+            android:src="@drawable/ic_touch" />
+
+        <TextView
+            android:id="@+id/score_fragment_tv_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:text="@string/label_text"
+            android:textAlignment="center"
+            android:textColor="@color/purple_700"
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/score_fragment_tv_score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:text="@{scoreViewModel.finalScore.toString()}"
+            android:textAlignment="center"
+            android:textColor="@color/purple_700"
+            android:textSize="72sp" />
+
+        <Button
+            android:id="@+id/score_fragment_bt_gamble"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:text="@string/button_gamble_text"
+            android:textSize="18sp"
+            android:visibility="@{scoreViewModel.hasGambled ? View.GONE : View.VISIBLE}"/>
+
+        <Button
+            android:id="@+id/score_fragment_bt_play"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/teal_700"
+            android:fontFamily="monospace"
+            android:text="@string/play_again_text"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/score_fragment_bt_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:text="@string/title_button_text"
+            android:textSize="18sp" />
+    </LinearLayout>
+</layout>
